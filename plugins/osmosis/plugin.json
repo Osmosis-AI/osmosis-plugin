@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "osmosis",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Evaluate an AI agent on your own examples, compare models on benchmarks, and train and deploy a checkpoint in your Osmosis workspace.",
   "author": {
     "name": "Osmosis AI",
@@ -16,7 +16,7 @@
     "com.openai": {
       "onboardingSkill": "./skills/get-started/SKILL.md",
       "publication": {
-        "release_notes": "First public release (0.1.0). Eleven skills help you prepare datasets, build and test rollouts, run evaluations and benchmarks, train models, and deploy checkpoints. The plugin also connects your agent to the public Osmosis documentation."
+        "release_notes": "Clarifies how to select the workspace for eval uploads and retries, where to run eval downloads, and how to read the largest model call in each rollout."
       },
       "interface": {
         "displayName": "Osmosis",
