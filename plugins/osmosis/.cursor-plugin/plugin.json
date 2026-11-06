@@ -1,0 +1,13 @@
+{
+  "name": "osmosis",
+  "version": "0.1.0",
+  "description": "Evaluate an AI agent on your own examples, compare models on benchmarks, and train and deploy a checkpoint in your Osmosis workspace.",
+  "author": {
+    "name": "Osmosis AI",
+    "email": "contact@osmosis.ai"
+  },
+  "homepage": "https://osmosis.ai",
+  "keywords": ["agent-evaluation", "benchmarks", "reinforcement-learning", "post-training", "llm"],
+  "logo": "assets/logo.svg",
+  "mcpServers": "./.mcp.json"
+}

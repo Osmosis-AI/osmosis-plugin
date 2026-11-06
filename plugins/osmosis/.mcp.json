@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "osmosis-docs": {
+      "type": "http",
+      "url": "https://docs.osmosis.ai/mcp"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "osmosis",
+  "interface": {
+    "displayName": "Osmosis"
+  },
+  "plugins": [
+    {
+      "name": "osmosis",
+      "source": {
+        "source": "local",
+        "path": "./plugins/osmosis"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

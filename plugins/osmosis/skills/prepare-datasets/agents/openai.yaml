@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prepare a dataset"
+  short_description: "Prepare, validate, and split examples for a run."
+  default_prompt: "Use $osmosis:prepare-datasets to check my example rows and prepare a held-out split."

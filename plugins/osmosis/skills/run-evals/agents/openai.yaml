@@ -1,0 +1,4 @@
+interface:
+  display_name: "Evaluate an agent"
+  short_description: "Run evaluations and compare results."
+  default_prompt: "Use $osmosis:run-evals to compare my existing evaluation results and explain where the agents differ."

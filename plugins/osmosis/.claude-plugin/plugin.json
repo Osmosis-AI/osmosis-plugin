@@ -1,0 +1,20 @@
+{
+  "name": "osmosis",
+  "displayName": "Osmosis",
+  "version": "0.1.0",
+  "description": "Evaluate an AI agent on your own examples, compare models on benchmarks, and train and deploy a checkpoint in your Osmosis workspace.",
+  "icon": "./assets/icon.png",
+  "homepage": "https://osmosis.ai",
+  "repository": "https://github.com/Osmosis-AI/osmosis-plugin",
+  "license": "MIT",
+  "documentationUrl": "https://docs.osmosis.ai/sdk/ai-tools",
+  "supportUrl": "https://docs.osmosis.ai/",
+  "privacyPolicyUrl": "https://osmosis.ai/legal/privacy-policy",
+  "termsOfServiceUrl": "https://osmosis.ai/legal/terms-of-service",
+  "keywords": ["agent-evaluation", "benchmarks", "reinforcement-learning", "post-training", "llm"],
+  "author": {
+    "name": "Osmosis AI",
+    "email": "contact@osmosis.ai",
+    "url": "https://osmosis.ai"
+  }
+}

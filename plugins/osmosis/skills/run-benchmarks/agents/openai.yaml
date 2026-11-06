@@ -1,0 +1,4 @@
+interface:
+  display_name: "Benchmark an agent"
+  short_description: "Choose a catalog benchmark and compare agents."
+  default_prompt: "Use $osmosis:run-benchmarks to choose a catalog benchmark for my agent and estimate the trial budget."

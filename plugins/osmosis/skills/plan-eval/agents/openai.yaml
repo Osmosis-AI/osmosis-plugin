@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plan an evaluation"
+  short_description: "Choose examples, a grading rule, and an evaluation budget."
+  default_prompt: "Use $osmosis:plan-eval to design a small comparison with examples and a grading rule."

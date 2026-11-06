@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build a rollout"
+  short_description: "Build an agent workflow and its grader."
+  default_prompt: "Use $osmosis:create-rollouts to turn my existing agent and grader into an Osmosis rollout."

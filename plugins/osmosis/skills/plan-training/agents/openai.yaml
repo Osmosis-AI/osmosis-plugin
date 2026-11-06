@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plan model training"
+  short_description: "Design the reward and held-out comparison."
+  default_prompt: "Use $osmosis:plan-training to design a reward and held-out comparison for the behavior I want to improve."

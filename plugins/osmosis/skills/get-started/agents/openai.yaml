@@ -1,0 +1,4 @@
+interface:
+  display_name: "Get started with Osmosis"
+  short_description: "Find the next step for your project."
+  default_prompt: "Use $osmosis:get-started to inspect my project and guide me through a first evaluation."

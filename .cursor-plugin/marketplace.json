@@ -1,0 +1,17 @@
+{
+  "name": "osmosis",
+  "owner": {
+    "name": "Osmosis AI",
+    "email": "contact@osmosis.ai"
+  },
+  "metadata": {
+    "description": "Agent skills for evaluating, training, and deploying models with Osmosis."
+  },
+  "plugins": [
+    {
+      "name": "osmosis",
+      "category": "Developer Tools",
+      "source": "plugins/osmosis"
+    }
+  ]
+}

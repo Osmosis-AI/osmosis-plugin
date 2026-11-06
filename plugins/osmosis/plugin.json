@@ -1,0 +1,42 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "osmosis",
+  "version": "0.1.0",
+  "description": "Evaluate an AI agent on your own examples, compare models on benchmarks, and train and deploy a checkpoint in your Osmosis workspace.",
+  "author": {
+    "name": "Osmosis AI",
+    "email": "contact@osmosis.ai",
+    "url": "https://osmosis.ai"
+  },
+  "homepage": "https://osmosis.ai",
+  "repository": "https://github.com/Osmosis-AI/osmosis-plugin",
+  "license": "MIT",
+  "keywords": ["agent-evaluation", "benchmarks", "reinforcement-learning", "post-training", "llm"],
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/get-started/SKILL.md",
+      "publication": {
+        "release_notes": "First public release (0.1.0). Eleven skills help you prepare datasets, build and test rollouts, run evaluations and benchmarks, train models, and deploy checkpoints. The plugin also connects your agent to the public Osmosis documentation."
+      },
+      "interface": {
+        "displayName": "Osmosis",
+        "shortDescription": "Evaluate and train AI agents",
+        "longDescription": "Turn examples from your project into an evaluation, compare agents on a benchmark, or decide which checkpoint to deploy. Start with an idea, existing agent code, or previous results. Planning and analysis of local files need no account; managed runs use the Osmosis CLI and your workspace.",
+        "developerName": "Osmosis AI",
+        "category": "Developer Tools",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://osmosis.ai",
+        "supportURL": "https://docs.osmosis.ai/",
+        "privacyPolicyURL": "https://osmosis.ai/legal/privacy-policy",
+        "termsOfServiceURL": "https://osmosis.ai/legal/terms-of-service",
+        "brandColor": "#5C6AD4",
+        "brandColorDark": "#8892E3",
+        "defaultPrompt": ["I’m new to Osmosis. Check what I already have and guide me through my first evaluation.", "Show me the bundled Osmosis sample evaluation. Which support-ticket agent would you choose, and why?", "Compare my existing evaluation results and recommend what to try next."],
+        "composerIcon": "./assets/icon.png",
+        "composerIconDark": "./assets/logo-dark.svg",
+        "logo": "./assets/logo.svg",
+        "logoDark": "./assets/logo-dark.svg"
+      }
+    }
+  }
+}

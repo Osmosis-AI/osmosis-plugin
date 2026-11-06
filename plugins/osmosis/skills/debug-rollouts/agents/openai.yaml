@@ -1,0 +1,4 @@
+interface:
+  display_name: "Debug a rollout"
+  short_description: "Trace a failed rollout from logs and results."
+  default_prompt: "Use $osmosis:debug-rollouts to trace a failed example through the supplied logs and explain what went wrong."

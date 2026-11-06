@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test a rollout"
+  short_description: "Check a rollout on a small sample."
+  default_prompt: "Use $osmosis:test-rollouts to check whether my rollout returns a trajectory and the expected grade on one example."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Serve a checkpoint"
+  short_description: "Serve a checkpoint and use its inference endpoint."
+  default_prompt: "Use $osmosis:deploy-models to check what I need to serve my chosen checkpoint and call its inference endpoint."

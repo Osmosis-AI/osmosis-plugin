@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "plugins": {
+    "osmosis": {
+      "components": {
+        "skills": [
+          { "name": "get-started", "description": "Find the next step for your project." },
+          { "name": "plan-eval", "description": "Choose examples, a grading rule, and an evaluation budget." },
+          { "name": "prepare-datasets", "description": "Prepare, validate, and split examples for a run." },
+          { "name": "create-rollouts", "description": "Build an agent workflow and its grader." },
+          { "name": "test-rollouts", "description": "Check a rollout on a small sample." },
+          { "name": "debug-rollouts", "description": "Trace a failed rollout from logs and results." },
+          { "name": "run-evals", "description": "Run evaluations and compare results." },
+          { "name": "run-benchmarks", "description": "Choose a catalog benchmark and compare agents." },
+          { "name": "plan-training", "description": "Design the reward and held-out comparison." },
+          { "name": "run-training", "description": "Manage training runs and compare checkpoints." },
+          { "name": "deploy-models", "description": "Serve a checkpoint and use its inference endpoint." }
+        ]
+      }
+    }
+  }
+}

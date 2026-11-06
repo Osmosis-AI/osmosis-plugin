@@ -1,0 +1,25 @@
+{
+  "name": "osmosis",
+  "owner": {
+    "name": "Osmosis AI",
+    "email": "contact@osmosis.ai"
+  },
+  "plugins": [
+    {
+      "name": "osmosis",
+      "description": "Evaluate an AI agent on your own examples, compare models on benchmarks, and train and deploy a checkpoint in your Osmosis workspace.",
+      "homepage": "https://osmosis.ai",
+      "category": "Developer Tools",
+      "keywords": ["agent-evaluation", "benchmarks", "reinforcement-learning", "post-training", "llm"],
+      "relevance": {
+        "topic": "Osmosis",
+        "signals": {
+          "cli": ["osmosis", "osmosis-ai", "osmosis_ai"],
+          "hosts": ["docs.osmosis.ai", "platform.osmosis.ai"]
+        }
+      },
+      "source": "./plugins/osmosis"
+    }
+  ],
+  "description": "Agent skills for evaluating, training, and deploying models with Osmosis."
+}

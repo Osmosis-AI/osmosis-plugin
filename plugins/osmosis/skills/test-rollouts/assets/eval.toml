@@ -1,0 +1,38 @@
+# Complete public eval config. Copy to configs/eval/<name>.toml and replace placeholders.
+# Optional overrides are commented out; keep them omitted unless the task needs them.
+# The numeric ranges below apply to managed runs. Check local backend limits separately.
+# Local execution uses files on disk; managed execution fetches the connected repository.
+
+[experiment]
+rollout = "<rollout>"                 # Required: directory name under rollouts/, not a path.
+entrypoint = "main.py"                # Required: file relative to rollouts/<rollout>/.
+model_path = "<provider/model>"       # Required: evaluation model identifier, e.g. openai/gpt-5-mini.
+dataset = "<dataset-name>"           # Required even with --dataset-file; a dataset name, not a path or ID.
+# branch = "main"                    # Managed source: omit both refs to use the repository default branch.
+# commit_sha = "0123456789abcdef0123456789abcdef01234567" # 7-40 hex characters; use instead of branch.
+
+[evaluation]
+# limit = 200                        # Positive integer: first N rows, capped by dataset size; 200 is an example.
+# Omitting limit: local runs every row; managed samples max(1, floor(dataset_rows / 10)).
+# For a full managed eval, set limit to the uploaded dataset's row count; local --rows overrides limit.
+# n = 1                              # Positive integer attempts per row; default 1. Work = selected rows * n.
+# batch_size = 1                     # Positive integer concurrent rows; managed default 1.
+# Local concurrency: --max-in-flight > batch_size > backend capacity > 1, capped by advertised capacity.
+# pass_threshold = 1.0               # Any finite number, matched to the grader's reward scale; default 1.0.
+# agent_workflow_timeout_s = 450      # Seconds per workflow: managed range [30, 3600], default 450.
+# grader_timeout_s = 150             # Seconds per grader: managed range [30, 600], default 150.
+# Local omitted timeouts inherit backend behavior; setting these fields forwards explicit deadlines.
+
+[env]
+# Optional visible literals, always strings. Names: ^[A-Z_][A-Z0-9_]*$; no _OSMOSIS_ prefix.
+# LOG_LEVEL = "INFO"
+# Keep names disjoint from secrets; managed eval also reserves controller variables such as N_RUNS.
+
+[secrets]
+required = []                       # Required table/key for eval, even when empty; add model/rollout secret names.
+# Example replacement: required = ["OPENAI_API_KEY"]. At most 16 unique names, each 1-255 characters.
+# Secret names: ^[A-Z][A-Z0-9_]*$. Supply values through secret records, environment or --secrets-file.
+# Store only names here. Per-run values are not persisted as secret records.
+
+# [advanced] is account-restricted and outside this public reference.
+# Local options such as --rows, --dataset-file and --max-in-flight are CLI flags, not TOML fields.

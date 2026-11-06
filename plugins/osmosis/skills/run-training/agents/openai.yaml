@@ -1,0 +1,4 @@
+interface:
+  display_name: "Manage a training run"
+  short_description: "Manage training runs and compare checkpoints."
+  default_prompt: "Use $osmosis:run-training to analyze my training results and recommend checkpoints to evaluate."

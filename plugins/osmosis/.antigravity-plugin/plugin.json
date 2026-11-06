@@ -1,0 +1,16 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "osmosis",
+  "displayName": "Osmosis",
+  "version": "0.1.0",
+  "description": "Evaluate an AI agent on your own examples, compare models on benchmarks, and train and deploy a checkpoint in your Osmosis workspace.",
+  "author": {
+    "name": "Osmosis AI",
+    "email": "contact@osmosis.ai",
+    "url": "https://osmosis.ai"
+  },
+  "homepage": "https://osmosis.ai",
+  "keywords": ["agent-evaluation", "benchmarks", "reinforcement-learning", "post-training", "llm"],
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": ["I’m new to Osmosis. Check what I already have and guide me through my first evaluation.", "Show me the bundled Osmosis sample evaluation. Which support-ticket agent would you choose, and why?", "Compare my existing evaluation results and recommend what to try next."]
+}

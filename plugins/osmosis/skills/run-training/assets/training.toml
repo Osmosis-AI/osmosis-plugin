@@ -1,0 +1,45 @@
+# Complete public training config. Copy to configs/training/<name>.toml and replace placeholders.
+# Commented numeric values show platform defaults; enable only the overrides the task needs.
+# The CLI checks known keys; the platform enforces the numeric ranges below before submission.
+
+[experiment]
+rollout = "<rollout>"                 # Required: directory name under rollouts/, not a path.
+entrypoint = "main.py"                # Required: file relative to rollouts/<rollout>/.
+model_path = "<supported-base-model>" # Required: choose from osmosis --json model list --type base.
+dataset = "<dataset-name>"           # Required: uploaded dataset name, not a local path or ID.
+# branch = "main"                    # Omit both refs to use the connected repository's default branch.
+# commit_sha = "0123456789abcdef0123456789abcdef01234567" # 7-40 hex characters; use instead of branch.
+
+[training]
+# lr = 1e-5                          # Finite number > 0; default 1e-5. No additional upper bound at submission.
+# total_epochs = 1                   # Integer >= 1; default 1 pass over the training split.
+# n_samples_per_prompt = 8           # Integer in [1, 12]; default 8 samples for each prompt.
+# rollout_batch_size = 32            # Integer in [1, 64]; default 32 prompts per training batch.
+# max_prompt_length = 8192           # Integer tokens in [1, 8192]; default 8192.
+# max_response_length = 8192         # Integer tokens in [1, 8192]; default 8192.
+# agent_workflow_timeout_s = 450     # Seconds per workflow; default 450. Use [30, 600]; see timeout note below.
+# grader_timeout_s = 150            # Seconds per grader in [30, 600]; default 150.
+# Use >600 only with documented or observed support on the target platform.
+# Samples per batch = rollout_batch_size * n_samples_per_prompt, not simultaneous sandbox count.
+
+[sampling]
+# rollout_temperature = 1.0          # Number >= 0; default 1.0. No additional upper bound at submission.
+# rollout_top_p = 1.0                # Number in (0, 1]; default 1.0.
+
+[checkpoints]
+# checkpoint_save_freq = 20          # Integer >= 1; default 20 training iterations (batches), not trajectories.
+# eval_interval is unsupported: the CLI recognizes the key, but the platform rejects a numeric value.
+# Evaluate saved checkpoints in a separate eval run.
+
+[env]
+# Optional visible literals, always strings. Names: ^[A-Z_][A-Z0-9_]*$; no _OSMOSIS_ prefix.
+# LOG_LEVEL = "INFO"
+# Keep names disjoint from secrets.
+
+[secrets]
+required = []                       # Optional for training; omit this table entirely or supply required.
+# Replace [] with the rollout's secret names, e.g. ["OPENAI_API_KEY"]; never their values.
+# At most 16 unique names, each 1-255 characters, matching ^[A-Z][A-Z0-9_]*$.
+# Supply values through secret records, environment or --secrets-file; per-run values are not persisted.
+
+# [advanced] is account-restricted and outside this public reference.
