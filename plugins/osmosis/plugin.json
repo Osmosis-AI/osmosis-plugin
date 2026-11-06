@@ -32,10 +32,8 @@
         "brandColor": "#5C6AD4",
         "brandColorDark": "#8892E3",
         "defaultPrompt": ["I’m new to Osmosis. Check what I already have and guide me through my first evaluation.", "Show me the bundled Osmosis sample evaluation. Which support-ticket agent would you choose, and why?", "Compare my existing evaluation results and recommend what to try next."],
-        "composerIcon": "./assets/icon.png",
-        "composerIconDark": "./assets/logo-dark.svg",
-        "logo": "./assets/logo.svg",
-        "logoDark": "./assets/logo-dark.svg"
+        "composerIcon": "./assets/logo.svg",
+        "logo": "./assets/logo.svg"
       }
     }
   }
