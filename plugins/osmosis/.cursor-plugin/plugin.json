@@ -1,6 +1,6 @@
 {
   "name": "osmosis",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Evaluate an AI agent on your own examples, compare models on benchmarks, and train and deploy a checkpoint in your Osmosis workspace.",
   "author": {
     "name": "Osmosis AI",
