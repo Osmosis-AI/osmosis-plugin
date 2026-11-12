@@ -6,7 +6,7 @@
 rollout = "<rollout>"                 # Required: directory name under rollouts/, not a path.
 entrypoint = "main.py"                # Required: file relative to rollouts/<rollout>/.
 model_path = "<supported-base-model>" # Required: choose from osmosis --json model list --type base.
-dataset = "<dataset-name>"           # Required: uploaded dataset name, not a local path or ID.
+dataset = "<dataset-name>"           # Required: uploaded dataset name or name@version, not a local path or ID.
 # branch = "main"                    # Omit both refs to use the connected repository's default branch.
 # commit_sha = "0123456789abcdef0123456789abcdef01234567" # 7-40 hex characters; use instead of branch.
 
