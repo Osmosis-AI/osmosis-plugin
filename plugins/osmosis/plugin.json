@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "osmosis",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Evaluate an AI agent on your own examples, compare models on benchmarks, and train and deploy a checkpoint in your Osmosis workspace.",
   "author": {
     "name": "Osmosis AI",
@@ -16,7 +16,7 @@
     "com.openai": {
       "onboardingSkill": "./skills/get-started/SKILL.md",
       "publication": {
-        "release_notes": "Clarifies how to select the workspace for eval uploads and retries, where to run eval downloads, and how to read the largest model call in each rollout."
+        "release_notes": "Describes dataset versions: uploading under an existing name adds a version, and name@version pins one. Eval configs use max_concurrent_attempts, with a default of 8."
       },
       "interface": {
         "displayName": "Osmosis",

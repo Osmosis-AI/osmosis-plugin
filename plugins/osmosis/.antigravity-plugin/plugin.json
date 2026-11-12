@@ -2,7 +2,7 @@
   "$schema": "https://antigravity.google/schemas/v1/plugin.json",
   "name": "osmosis",
   "displayName": "Osmosis",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Evaluate an AI agent on your own examples, compare models on benchmarks, and train and deploy a checkpoint in your Osmosis workspace.",
   "author": {
     "name": "Osmosis AI",
